@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PS5 Controller Calibration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>PS5 Controller Stick Drift Calibration</h1>
+  <p>Connect your controller and move the sticks to test for drift.</p>
+  
+  <div class="controller">
+    <div class="stick" id="leftStick">
+      <p>Left Stick</p>
+      <canvas id="leftCanvas" width="200" height="200"></canvas>
+    </div>
+    <div class="stick" id="rightStick">
+      <p>Right Stick</p>
+      <canvas id="rightCanvas" width="200" height="200"></canvas>
+    </div>
+  </div>
+  
+  <div>
+    <label for="deadzone">Deadzone (%):</label>
+    <input type="range" id="deadzone" min="0" max="25" value="5"/>
+    <span id="deadzoneValue">5</span>%
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
