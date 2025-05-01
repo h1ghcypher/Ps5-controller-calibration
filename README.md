@@ -1,1 +1,1 @@
-go to H1gh.github.io
+go to https://h1ghcypher.github.io/Ps5-controller-calibration/
